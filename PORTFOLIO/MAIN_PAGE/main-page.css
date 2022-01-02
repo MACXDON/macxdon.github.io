@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: rgb(35, 35, 35);
+    float: left;
+    width: 12rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    position: fixed;
+    left: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav button {
+    text-decoration: none;
+    padding: 0.7rem;
+    margin: 2rem auto;
+    border: none;
+    background-color: transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color:rgb(174, 174, 174);
+}
+
+.nav button:hover {
+    cursor: pointer;
+    color: rgb(99, 99, 99);
+}
+
+
+/** CONTENT **/
+.content {
+    background-color: rgb(174, 174, 174);
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-page {
+    display: none;
+    background-color: rgb(69, 25, 140);
+    width: 100%;
+    height: 100vh;
+}
+
+.project-page {
+    display: none;
+    background-color: rgb(21, 0, 254);
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        display: none;
+        z-index: 5;
+        width: 100%;
+    }
+
+    .menu-button {
+        width: 100%;
+        height: 2rem;
+        background-color: olive;
+        
+    }
+}
