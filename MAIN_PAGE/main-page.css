@@ -129,6 +129,7 @@
     }
 
     .nav {
+        height: auto;
         display: none;
         text-align: center;
         top: 3rem;
