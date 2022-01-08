@@ -12,6 +12,7 @@
 .nav {
     background-color: rgb(35, 35, 35);
     width: 100%;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,16 +31,14 @@
     margin: 0 2rem;
 }
 
-.nav button {
+.nav a {
     text-decoration: none;
-    margin: 1.5rem auto;
-    border: none;
     background-color: transparent;
-    font-weight: 700;
+    font-weight: 600;
     color:rgb(174, 174, 174);
 }
 
-.nav button:hover {
+.nav a:hover {
     cursor: pointer;
     color: rgb(99, 99, 99);
 }
@@ -53,7 +52,6 @@
     width: 100%;
     height: 30rem;
     position: relative;
-    top: 3rem;
     padding: 1.25rem;
     display: flex;
     justify-content: center;
@@ -102,49 +100,42 @@
     background-color: rgb(35, 35, 35);
     width: 100%;
     height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 700px) {
+.social {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    margin: 0 2em;
+    width: 2.25em;
+}
+
+@media screen and (max-width: 500px) {
 
     .menu-button {
         display: flex;
-        z-index: 99;
-        width: 75px;
-        height: 75px;
-        border-radius: 50%;
-        position: absolute;
-        background-color: blueviolet;
-        bottom: 1.625rem;
-        left: 1.625rem;
-        flex-direction: column;
+        width: 100%;
+        height: 4rem;
+        background-color: rgb(35, 35, 35);
+        color: rgb(99, 99, 99);
         justify-content: center;
         align-items: center;
     }
 
-    .menu-button .bar {
-        width: 2.125rem;
-        height: 0.425rem;
-        border-radius: 0.125rem;
-        margin: 0.225rem auto;
-        background-color: #FFF;
-    }
-
     .nav {
-        display: flex;
-        z-index: 10;
-        width: 100%;
+        display: none;
+        text-align: center;
+        top: 3rem;
     }
 
-    .content, .project-page, .contact-page {
-        width: 100%;
-        padding: 0 1rem;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .content .profile-pic {
-        margin-bottom: 3rem;
+    .nav li {
+        display: block;
+        margin: 3rem;
     }
 }
