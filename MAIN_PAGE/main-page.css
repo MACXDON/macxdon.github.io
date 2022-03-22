@@ -43,6 +43,46 @@
     color: rgb(99, 99, 99);
 }
 
+/** EMAIL SUBMISSION **/
+#email-submission-form {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 99;
+    width: 50%;
+    height: 75%;
+    background-color: rgb(74, 74, 74);
+    border-radius: 0.625rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#email-submission-form div {
+    margin-top: 1rem;
+}
+
+#email-submission-form .email-form, .subject-form {
+    padding: 0.5rem 1rem;
+    border-radius: 0.625rem;
+    border: none;
+}
+
+#email-submission-form .message-field {
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    border: none;
+    height: 6.25rem;
+    width: 18.75rem;
+}
+
+#email-submission-form button {
+    padding: 0.5rem;
+    border-radius: 0.3125rem;
+    border: none;
+    font-weight: bold;
+}
 
 /** CONTENT **/
 .content {
